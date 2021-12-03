@@ -33,8 +33,9 @@ python lof.py --train_data_path='./data/nasa_bearing_train.csv' \
 python iforest.py --train_data_path='./data/nasa_bearing_train.csv' \
                   --test_data_path='./data/nasa_bearing_test.csv' \
                   --save_root_path='./result/iforest'
-                  
+```                  
 <br><br>
+
 ## 4. Spectral Residual을 활용한 이상치 탐지
 - 설정된 window size 와 score window size 를 통해 window 구간 내 이상치를 탐지함<br>
 - score window size 는 window size 보다 크게 설정해야함
