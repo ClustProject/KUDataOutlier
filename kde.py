@@ -31,13 +31,9 @@ def main(train_data_path, test_data_path, save_root_path):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--train-data-path', type=str, default='./data/nasa_bearing_train.csv')
-    parser.add_argument('--test-data-path', type=str, default='./data/nasa_bearing_test.csv')
-    parser.add_argument('--save-root-path', type=str, default='./result/kde')
+    
+    train_data_path= './data/nasa_bearing_train.csv'
+    test_data_path= './data/nasa_bearing_test.csv'
+    save_root_path= './result/kde'
 
-    args, _ = parser.parse_known_args()
-
-    main(train_data_path=args.train_data_path,
-         test_data_path=args.test_data_path,
-         save_root_path=args.save_root_path)
+    main(train_data_path= train_data_path, test_data_path=test_data_path, save_root_path=save_root_path)
